@@ -10,6 +10,7 @@ pinned: false
 suggested_hardware: t4-medium
 startup_duration_timeout: 1h
 duplicated_from: estusgroup/ai-qr-generator-earlybeta
+license: cc-by-nc-nd-4.0
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
