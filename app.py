@@ -1,8 +1,8 @@
 #Created for https://www.aiqrgenerator.com/ as a public beta version for embedding. 
+#I wanted to make the model more accessable for common users and public facing. Feel free to check it out or share at https://www.aiqrgenerator.com/generator.
 #May update again but will probably remain the final public version as I am still working on features and consider this a minimum viable product
 #Further updates and custom models will be updated privately.
 
-#Please ensure
 
 
 #derivative and edited from QR-code-AI-art-generator by patrickvonplaten - customized AND COPYRIGHTED UNDER COMMERCIAL LICENSE
@@ -167,36 +167,23 @@ def inference(
 with gr.Blocks() as blocks:
     gr.Markdown(
         """
-======================================CREATED FOR  https://www.aiqrgenerator.com/ EARLY BETA - PUBLIC ACCESS V1.02============================================    
-
-==================***DISCLAIMER - By using this model you agree to waive any liability and are assuming all responsibility for generated images.***==================    
-===============================================================================================================================================================   
-
-     
+ # CREATED FOR  https://www.aiqrgenerator.com/ EARLY BETA - PUBLIC ACCESS V1.02
+==========================**DISCLAIMER - By using this model you agree to waive any liability and are assuming all responsibility for generated images.**==========================    
+   
+   
+       
 First, type in what you want the QR code to look like. Use major subjects seperated by commas like the example below - you can even include styles!
 Ex. Mountian, snow, morning, trees, artist, oil painting, canvas  
   
 Then, type your QR code information such as a website link or enter your own QR code.  
 
-Feel free to test custom settings as well to tweak the look.
+Feel free to test custom settings as well to tweak or try changing your prompt.
     
-Hit generate!  
+**Hit run!**  
    
    
-===========================================================CUSTOM SETTINGS====================================================================================    
-The default settings should work for testing. Currently working on improving the model and offering more customization!   
-   
-**QR High Pass** - Change this to affect how much the QR code is overlayed to your image in a second pass. Controlnet model.
-(Higher setting is more QR code, lower setting is less QR code.)
-   
-**QR Initial Weight** - Change this to affect how much your image starts looking like a QR code!   
-(Higher settings mean your image starts with less QR, lower means the QR will appear sharper)
-  
-**Prompt Weight** - This determines how much the AI "Listens" to your prompt and try to put what you described into your image.  
-(Lower means it is more absract and higher follows your directions more.)
-  
-**Seed** - This is a randomizer! Use the same seed to generate the same image over and over. Change the seed to change up your image!
-(Set it to negative -1 to randomize, you can copy your seed from a previous generation to get the same image)
+==============================================================================================================================================================================    
+
 
                 """
     )
@@ -241,7 +228,7 @@ The default settings should work for testing. Currently working on improving the
             #use_qr_code_as_init_image.change(change_view, inputs=[use_qr_code_as_init_image], outputs=[init_image_acc])
 
             with gr.Accordion(
-                label="You can modify the generation slightly using the below sliders. See details above. \n ",
+                label="You can modify the generation slightly using the below sliders. See details below. \n ",
                 open=True,
             ):
                 controlnet_conditioning_scale = gr.Slider(
@@ -290,6 +277,20 @@ The default settings should work for testing. Currently working on improving the
             sampler,
         ],
         outputs=[result_image],
+    gr.Markdown("""
+        ### Settings Details
+**QR High Pass** - Change this to affect how much the QR code is overlayed to your image in a second pass. Controlnet model.
+(Higher setting is more QR code, lower setting is less QR code.)
+   
+**QR Initial Weight** - Change this to affect how much your image starts looking like a QR code!   
+(Higher settings mean your image starts with less QR, lower means the QR will appear sharper)
+  
+**Prompt Weight** - This determines how much the AI "Listens" to your prompt and try to put what you described into your image.  
+(Lower means it is more absract and higher follows your directions more.)
+  
+**Seed** - This is a randomizer! Use the same seed to generate the same image over and over. Change the seed to change up your image!
+(Set it to negative -1 to randomize, you can copy your seed from a previous generation to get the same image)
+        """)    
     )
 
 
