@@ -1,5 +1,5 @@
 #Created for https://www.aiqrgenerator.com/ as a public beta version for embedding. 
-#I wanted to make the model more accessable for common users and public facing. Feel free to check it out or share at https://www.aiqrgenerator.com/generator.
+#I wanted to make the model more accessable for public users and commercialized. Feel free to share at https://www.aiqrgenerator.com/generator.
 #May update again but will probably remain the final public version as I am still working on features and consider this a minimum viable product
 #Further updates and custom models will be updated privately.
 
@@ -277,8 +277,10 @@ Feel free to test custom settings as well to tweak or try changing your prompt.
             sampler,
         ],
         outputs=[result_image],
-    gr.Markdown("""
-        ### Settings Details
+    )
+    gr.Markdown(
+        """
+### Settings Details
 **QR High Pass** - Change this to affect how much the QR code is overlayed to your image in a second pass. Controlnet model.
 (Higher setting is more QR code, lower setting is less QR code.)
    
@@ -289,10 +291,10 @@ Feel free to test custom settings as well to tweak or try changing your prompt.
 (Lower means it is more absract and higher follows your directions more.)
   
 **Seed** - This is a randomizer! Use the same seed to generate the same image over and over. Change the seed to change up your image!
-(Set it to negative -1 to randomize, you can copy your seed from a previous generation to get the same image)
-        """)    
-    )
+(Set it to negative -1 to randomize, you can copy your seed from a previous generation to get the same image)==============================================================================================================================================================================    
 
+                """
+    )
 
 blocks.queue(concurrency_count=1, max_size=20)
 blocks.launch(share=False)
