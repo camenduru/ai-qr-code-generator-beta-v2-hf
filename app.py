@@ -175,7 +175,7 @@ Type in what you want the QR code to look like. Use major subjects seperated by 
   
 Type your QR code information such as a website link or if you have a QR image, upload it.  
 
-Feel free to test custom settings as well to make the QR work or try changing your prompt.
+Feel free to test custom settings as well to make the QR work or try changing your prompt. Change the seed to any number to completely change your generation.
     
 **Hit run!**  
    
@@ -252,7 +252,7 @@ Feel free to test custom settings as well to make the QR work or try changing yo
                     maximum=9999999999,
                     step=1,
                     value=2313123,
-                    label="Seed (-1 is Randomized)",
+                    label="Seed",
                     randomize=True,
                 )
             with gr.Row():
@@ -289,7 +289,7 @@ Feel free to test custom settings as well to make the QR work or try changing yo
 (Lower means it is more absract and higher follows your directions more.)
   
 **Seed** - This is a randomizer! Use the same seed to generate the same image over and over. Change the seed to change up your image!
-(Set it to negative -1 to randomize, you can copy your seed from a previous generation to get the same image)
+(You can copy your seed from a previous generation to get the same image.)
                 """
     )
 
