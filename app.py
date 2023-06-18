@@ -169,14 +169,13 @@ with gr.Blocks() as blocks:
         """
  # CREATED FOR  HTTPS://WWW.AIQRGENERATOR.COM/ EARLY BETA PUBLIC ACCESS V1.02 - NONCOMMERCIAL USE
 ==================================**DISCLAIMER - By using this model you agree to waive any liability and are assuming all responsibility for generated images.**===================================    
-   
-       
-Type in what you want the QR code to look like. Use major subjects seperated by commas like the example below - you can even include styles!
-  
-Type your QR code information such as a website link or if you have a QR image, upload it.  
 
-Feel free to test custom settings as well to make the QR work or try changing your prompt. Change the seed to any number to completely change your generation.
-    
+This generator is trained using SD 1.5. To use SD 2.1 for better quality and other features like upscaling and initial image generation, check out our newest model.
+When sharing generated QR codes, please credit aiqrgenerator.com.
+
+Type in what you want the QR code to look like. Use major subjects seperated by commas like the example below - you can even include styles! 
+Type your QR code information such as a website link or if you have a QR image, upload it.  
+Feel free to test custom settings as well to make the QR work or try changing your prompt. Change the seed to any number to completely change your generation.   
 **Hit run!**  
    
    
