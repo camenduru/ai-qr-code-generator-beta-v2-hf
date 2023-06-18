@@ -167,17 +167,15 @@ def inference(
 with gr.Blocks() as blocks:
     gr.Markdown(
         """
- # CREATED FOR  https://www.aiqrgenerator.com/ EARLY BETA - PUBLIC ACCESS V1.02
-==========================**DISCLAIMER - By using this model you agree to waive any liability and are assuming all responsibility for generated images.**==========================    
-   
+ # CREATED FOR  HTTPS://WWW.AIQRGENERATOR.COM/ EARLY BETA PUBLIC ACCESS V1.02 - NONCOMMERCIAL USE
+==================================**DISCLAIMER - By using this model you agree to waive any liability and are assuming all responsibility for generated images.**===================================    
    
        
-First, type in what you want the QR code to look like. Use major subjects seperated by commas like the example below - you can even include styles!
-Ex. Mountian, snow, morning, trees, artist, oil painting, canvas  
+Type in what you want the QR code to look like. Use major subjects seperated by commas like the example below - you can even include styles!
   
-Then, type your QR code information such as a website link or enter your own QR code.  
+Type your QR code information such as a website link or if you have a QR image, upload it.  
 
-Feel free to test custom settings as well to tweak or try changing your prompt.
+Feel free to test custom settings as well to make the QR work or try changing your prompt.
     
 **Hit run!**  
    
@@ -189,7 +187,7 @@ Feel free to test custom settings as well to tweak or try changing your prompt.
     )
     prompt = gr.Textbox(
     label="Prompt",
-    info="Input subjects or styles you want to see that describes your image - Ex. Mountian, snow, morning, trees :: art, painting, digital",
+    info="Input subjects or styles you want to see that describes your image - Ex. Mountian, snow, morning, trees, art, painting, digital",
     )
 
     negative_prompt = gr.Textbox(visible=True, label="Negative Prompt", 
@@ -291,8 +289,7 @@ Feel free to test custom settings as well to tweak or try changing your prompt.
 (Lower means it is more absract and higher follows your directions more.)
   
 **Seed** - This is a randomizer! Use the same seed to generate the same image over and over. Change the seed to change up your image!
-(Set it to negative -1 to randomize, you can copy your seed from a previous generation to get the same image)==============================================================================================================================================================================    
-
+(Set it to negative -1 to randomize, you can copy your seed from a previous generation to get the same image)
                 """
     )
 
