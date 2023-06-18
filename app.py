@@ -233,7 +233,7 @@ Feel free to test custom settings as well to make the QR work or try changing yo
                     minimum=0.6,
                     maximum=2.0,
                     step=0.01,
-                    value=0.70,
+                    value=1.00,
                     label="QR High Pass",
                 )
                 strength = gr.Slider(
@@ -243,7 +243,7 @@ Feel free to test custom settings as well to make the QR work or try changing yo
                     minimum=5.0,
                     maximum=15.0,
                     step=0.25,
-                    value=7.5,
+                    value=8.0,
                     label="Prompt Weight",
                 )
                 sampler = gr.Textbox(visible=False, value="DDIM") #gr.Dropdown(choices=list(SAMPLER_MAP.keys()), value="DPM++ Karras SDE")
