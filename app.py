@@ -159,7 +159,7 @@ def inference(
         controlnet_conditioning_scale=float(controlnet_conditioning_scale),  # type: ignore
         generator=generator,
         strength=float(strength),
-        num_inference_steps=30,
+        num_inference_steps=25,
     )
     return out.images[0]  # type: ignore
 
