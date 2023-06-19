@@ -186,7 +186,7 @@ Feel free to test custom settings as well to make the QR work or try changing yo
     )
     prompt = gr.Textbox(
     label="Prompt",
-    info="Input subjects or styles you want to see that describes your image - Ex. Mountian, snow, morning, trees, art, painting, digital",
+    info="Input subjects or styles you want to see that describes your image - Ex. Mountain, snow, morning, art, painting, digital",
     )
 
     negative_prompt = gr.Textbox(visible=True, label="Negative Prompt", 
@@ -198,7 +198,7 @@ Feel free to test custom settings as well to make the QR work or try changing yo
             qr_code_content = gr.Textbox(
                 label="QR Code Content",
                 info="QR Code Content or URL",
-                value="",
+                value="https://www.aiqrgenerator.com/",
             )
             with gr.Accordion(label="QR Code Image (Optional)", open=False):
                 qr_code_image = gr.Image(
