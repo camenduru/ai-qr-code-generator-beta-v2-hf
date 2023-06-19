@@ -1,6 +1,6 @@
 ---
-title: AI QR Generator BETA V2
-emoji: null
+title: AI QR Code Generator BETA V2
+emoji: 🚀
 colorFrom: pink
 colorTo: pink
 sdk: gradio
