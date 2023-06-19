@@ -167,14 +167,14 @@ def inference(
 with gr.Blocks() as blocks:
     gr.Markdown(
         """
-                            # CREATED FOR  HTTPS://WWW.AIQRGENERATOR.COM/ EARLY BETA PUBLIC ACCESS V1.02    
+                                            # CREATED FOR  HTTPS://WWW.AIQRGENERATOR.COM/ EARLY BETA PUBLIC ACCESS V1.02    
                                 
 ==================================**DISCLAIMER - By using this model you agree to waive any liability and are assuming all responsibility for generated images.**===================================    
-
+====================================================================**This model is not intended for commerical use.**==============================================================================    
 This generator is trained using SD 1.5. To use SD 2.1 for better quality and other features like upscaling, personal images, dynamic QR codes, style options, and more:
 check out our newest model at https://www.aiqrgenerator.com/pro-model
   
-When sharing generated QR codes generated with this specific model, please credit aiqrgenerator.com.
+When sharing generated QR codes generated with this specific model, please credit aiqrgenerator.com. Feel free to embbed the model or share a link to the website page.
 
 Type in what you want the QR code to look like. Use major subjects seperated by commas like the example below - you can even include styles! 
 Type your QR code information such as a website link or if you have a QR image, upload it.  
