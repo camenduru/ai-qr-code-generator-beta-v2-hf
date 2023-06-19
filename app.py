@@ -183,7 +183,8 @@ Feel free to test custom settings as well to make the QR work or try changing yo
    
    
 ==============================================================================================================================================================================    
-
+                                            # CREATED FOR  HTTPS://WWW.AIQRGENERATOR.COM/ EARLY BETA PUBLIC ACCESS V1.02    
+                                
 
                 """
     )
