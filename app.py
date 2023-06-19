@@ -170,9 +170,9 @@ with gr.Blocks() as blocks:
                                             # CREATED FOR  HTTPS://WWW.AIQRGENERATOR.COM/ EARLY BETA PUBLIC ACCESS V1.02    
                                 
 ==================================**DISCLAIMER - By using this model you agree to waive any liability and are assuming all responsibility for generated images.**===================================    
-====================================================================**This model is not intended for commerical use.**==============================================================================    
-This generator is trained using SD 1.5. To use SD 2.1 for better quality and other features like upscaling, personal images, dynamic QR codes, style options, and more:
-check out our newest model at https://www.aiqrgenerator.com/pro-model
+====================================================================**This model is not intended for commerical use.**==================================================================    
+This generator is trained using SD 1.5. To use SD 2.1 for better quality and other features like upscaling, personal images, dynamic QR codes, custom models and style options, and more:
+check out https://www.aiqrgenerator.com/pro-model
   
 When sharing generated QR codes generated with this specific model, please credit aiqrgenerator.com. Feel free to embbed the model or share a link to the website page.
 
@@ -183,14 +183,13 @@ Feel free to test custom settings as well to make the QR work or try changing yo
    
    
 ==============================================================================================================================================================================    
-                                            # CREATED FOR  HTTPS://WWW.AIQRGENERATOR.COM/ EARLY BETA PUBLIC ACCESS V1.02    
-                                
 
                 """
     )
     prompt = gr.Textbox(
     label="Prompt",
     info="Input subjects or styles you want to see that describes your image - Ex. Mountain, snow, morning, art, painting, digital",
+    value="Mountain, snow, morning, art, painting, digital"
     )
 
     negative_prompt = gr.Textbox(visible=True, label="Negative Prompt", 
