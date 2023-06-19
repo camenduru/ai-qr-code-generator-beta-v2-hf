@@ -169,8 +169,8 @@ with gr.Blocks() as blocks:
         """
                                             # CREATED FOR  HTTPS://WWW.AIQRGENERATOR.COM/ EARLY BETA PUBLIC ACCESS V1.02    
                                 
-==================================**DISCLAIMER - By using this model you agree to waive any liability and are assuming all responsibility for generated images.**===================================    
-====================================================================**This model is not intended for commerical use.**==================================================================    
+===================================**DISCLAIMER - By using this model you agree to waive any liability and are assuming all responsibility for generated images.**=====================================    
+====================================================================**This model is not intended for commerical use.**=====================================================================    
 This generator is trained using SD 1.5. To use SD 2.1 for better quality and other features like upscaling, personal images, dynamic QR codes, custom models and style options, and more:
 check out https://www.aiqrgenerator.com/pro-model
   
@@ -182,7 +182,7 @@ Feel free to test custom settings as well to make the QR work or try changing yo
 **Hit run!**  
    
    
-==============================================================================================================================================================================    
+=================================================================================================================================================================================    
 
                 """
     )
