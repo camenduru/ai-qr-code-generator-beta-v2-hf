@@ -1,5 +1,5 @@
 ---
-title: AI QR Code Generator BETA V2
+title: AI QR Code Art Generator BETA V2
 emoji: 🚀
 colorFrom: pink
 colorTo: pink
