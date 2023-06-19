@@ -167,10 +167,13 @@ def inference(
 with gr.Blocks() as blocks:
     gr.Markdown(
         """
-                                    # CREATED FOR  HTTPS://WWW.AIQRGENERATOR.COM/ EARLY BETA PUBLIC ACCESS V1.02 - Custom/Updated Version of Original     
+    # CREATED FOR  HTTPS://WWW.AIQRGENERATOR.COM/ EARLY BETA PUBLIC ACCESS V1.02 - Custom version of the original for better quality and ease of use.     
                                 
 ===================================**DISCLAIMER - By using this model you agree to waive any liability and are assuming all responsibility for generated images.**=====================================    
 ====================================================================**This model is not intended for commerical use.**=====================================================================    
+
+    
+     
 This generator is trained using SD 1.5. To use SD 2.1 for better quality and other features like upscaling, personal images, dynamic QR codes, custom models and style options, and more:
 visit     
 https://www.aiqrgenerator.com/pro-model    
@@ -178,8 +181,9 @@ https://www.aiqrgenerator.com/pro-model
 When sharing generated QR codes generated with this specific model, please credit aiqrgenerator.com. Feel free to embbed the model or share a link to the website page.
 
 Type in what you want the QR code to look like. Use major subjects seperated by commas like the example below - you can even include styles! 
+Change the seed in the last setting to completely change the generation.
 Type your QR code information such as a website link or if you have a QR image, upload it.  
-Feel free to test custom settings as well to make the QR work or try changing your prompt. Change the seed to any number to completely change your generation.   
+Feel free to test custom settings as well to make the QR work or try changing your prompt. 
 **Hit run!**  
    
    
@@ -251,7 +255,7 @@ Feel free to test custom settings as well to make the QR work or try changing yo
                 )
                 sampler = gr.Textbox(visible=False, value="DDIM") #gr.Dropdown(choices=list(SAMPLER_MAP.keys()), value="DPM++ Karras SDE")
                 seed = gr.Slider(
-                    minimum=-1,
+                    minimum=1,
                     maximum=9999999999,
                     step=1,
                     value=2313123,
