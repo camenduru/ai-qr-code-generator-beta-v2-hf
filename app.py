@@ -176,14 +176,19 @@ with gr.Blocks() as blocks:
      
 This generator is trained using SD 1.5. To use SD 2.1 for better quality and other features like upscaling, personal images, dynamic QR codes, custom models and style options, and more:
 visit     
-https://www.aiqrgenerator.com/pro-model    
-    
+https://www.aiqrgenerator.com/pro-model     
+
+            
+
+
+        
 When sharing generated QR codes generated with this specific model, please credit aiqrgenerator.com. Feel free to embbed the model or share a link to the website page.
 
 Type in what you want the QR code to look like. Use major subjects seperated by commas like the example below - you can even include styles! 
 Change the seed in the last setting to completely change the generation.
 Type your QR code information such as a website link or if you have a QR image, upload it.  
-Feel free to test custom settings as well to make the QR work or try changing your prompt. 
+Feel free to test custom settings as well to make the QR work or try changing your prompt.    
+
 **Hit run!**  
    
    
